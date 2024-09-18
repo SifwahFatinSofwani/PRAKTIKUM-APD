@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="RIL DONE"/>
+        <attribute name="authors" value="MSI Ryzen 5"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-11 10:49:43 PM"/>
+        <attribute name="created" value="TVNJIFJ5emVuIDU7U0lGUzsyMDI0LTA5LTExOzA5OjA2OjI2IEFNOzI0NjY="/>
+        <attribute name="edited" value="TVNJIFJ5emVuIDU7U0lGUzsyMDI0LTA5LTExOzEwOjQ5OjQzIFBNOzg7MjU5NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="PEMBELIAN, A, percent, B, C, DISKON3, DISKON, DISKON2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Silahkan cek apakah anda mendapatkan diskon atau tidak &quot;" newline="True"/>
+            <output expression="&quot;Masukkan jumlah tiket yang ingin dibeli &quot;" newline="True"/>
+            <input variable="PEMBELIAN"/>
+            <if expression="PEMBELIAN&gt;2">
+                <then>
+                    <output expression="&quot;Masukkan umur pengunjung pertama&quot;" newline="True"/>
+                    <input variable="A"/>
+                    <if expression="A&gt;12">
+                        <then>
+                            <if expression="A&gt;=12 AND A&lt;=18">
+                                <then>
+                                    <assign variable="DISKON" expression="13"/>
+                                </then>
+                                <else>
+                                    <if expression="A&gt;18">
+                                        <then>
+                                            <assign variable="DISKON" expression="10"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="DISKON" expression="17"/>
+                        </else>
+                    </if>
+                    <output expression="&quot;Diskon yang didapat adalah &quot;" newline="False"/>
+                    <output expression="DISKON" newline="False"/>
+                    <output expression="&quot;%&quot;" newline="True"/>
+                    <do expression="A=B">
+                        <input variable="B"/>
+                        <if expression="A=B">
+                            <then>
+                                <output expression="&quot;Anda tidak memasukkan umur yang sama &quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </do>
+                    <if expression="B&gt;12">
+                        <then>
+                            <if expression="B&gt;=12 AND B&lt;=18">
+                                <then>
+                                    <assign variable="DISKON2" expression="13"/>
+                                </then>
+                                <else>
+                                    <if expression="B&gt;18">
+                                        <then>
+                                            <assign variable="DISKON2" expression="10"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="DISKON2" expression="17"/>
+                        </else>
+                    </if>
+                    <output expression="&quot;Diskon yang didapat adalah &quot;" newline="False"/>
+                    <output expression="DISKON2" newline="False"/>
+                    <output expression="&quot;%&quot;" newline="True"/>
+                    <do expression="A=B OR A=C OR B=C">
+                        <input variable="C"/>
+                        <if expression="A=B OR A=C OR B=C">
+                            <then>
+                                <output expression="&quot;Anda tidak bisa memasukkan umur yang sama&quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </do>
+                    <if expression="C&gt;12">
+                        <then>
+                            <if expression="C&gt;=12 AND C&lt;=18">
+                                <then>
+                                    <assign variable="DISKON3" expression="13"/>
+                                </then>
+                                <else>
+                                    <if expression="C&gt;18">
+                                        <then>
+                                            <assign variable="DISKON3" expression="10"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="DISKON3" expression="17"/>
+                        </else>
+                    </if>
+                    <output expression="&quot;Diskon yang didapat adalah &quot;" newline="False"/>
+                    <output expression="DISKON3" newline="False"/>
+                    <output expression="&quot;%&quot;" newline="True"/>
+                    <output expression="&quot;Jadi diskon yang didapat pengujung adalah &quot; &amp; &quot; Pengunjung 1 mendapat &quot; &amp; DISKON &amp; &quot;%&quot; &amp; &quot; Pengunjung 2 mendapat &quot; &amp; DISKON2 &amp; &quot;%&quot; &amp; &quot; Pengunjung 3 mendapat &quot; &amp; DISKON3 &amp; &quot;%&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;maaf anda tidak mendapatkan diskon&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

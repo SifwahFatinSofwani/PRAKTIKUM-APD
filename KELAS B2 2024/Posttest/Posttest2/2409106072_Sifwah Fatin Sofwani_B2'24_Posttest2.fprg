@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="POSTTEST2"/>
+        <attribute name="authors" value="MSI Ryzen 5"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-18 02:21:28 PM"/>
+        <attribute name="created" value="TVNJIFJ5emVuIDU7U0lGUzsyMDI0LTA5LTE2OzA0OjAxOjIwIFBNOzI0NzA="/>
+        <attribute name="edited" value="TVNJIFJ5emVuIDU7U0lGUzsyMDI0LTA5LTE4OzAyOjIxOjI4IFBNOzE1OzI2NDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Selamat datang di program untuk menghitung diskon barang&quot;" newline="True"/>
+            <declare name="NAMABARANG" type="String" array="False" size=""/>
+            <declare name="JUMLAHBARANG, HARGABARANG, TOTALHARGASEBELUMDISKON, TOTALDISKON, HARGASETELAHDISKON, SISABAGIDISKON, DISKON" type="Integer" array="False" size=""/>
+            <output expression="&quot;MASUKKAN NAMA BARANG&quot;" newline="True"/>
+            <input variable="NAMABARANG"/>
+            <output expression="&quot;MASUKKAN HARGA BARANG &quot;" newline="True"/>
+            <input variable="HARGABARANG"/>
+            <output expression="&quot; MASUKKAN JUMLAH BARANG &quot;" newline="True"/>
+            <input variable="JUMLAHBARANG"/>
+            <output expression="&quot;Masukkan Diskon sesuai dengan NIM &quot;" newline="True"/>
+            <input variable="DISKON"/>
+            <output expression="&quot;Selamat anda mendapatkan diskon &quot; &amp; DISKON &amp; &quot;%&quot;" newline="True"/>
+            <output expression="&quot;Menghitung Total harga sebelum diskon&quot;" newline="True"/>
+            <assign variable="TOTALHARGASEBELUMDISKON" expression="HARGABARANG * JUMLAHBARANG"/>
+            <output expression="TOTALHARGASEBELUMDISKON" newline="True"/>
+            <output expression="&quot;Menghitung total diskon&quot;" newline="True"/>
+            <assign variable="TOTALDISKON" expression="(DISKON/100) * TOTALHARGASEBELUMDISKON"/>
+            <output expression="TOTALDISKON" newline="True"/>
+            <output expression="&quot;Menghitung harga setelah diskon&quot;" newline="True"/>
+            <assign variable="HARGASETELAHDISKON" expression="TOTALHARGASEBELUMDISKON - TOTALDISKON"/>
+            <output expression="HARGASETELAHDISKON" newline="True"/>
+            <output expression="&quot;Menghitung sisa bagi diskon&quot;" newline="True"/>
+            <assign variable="SISABAGIDISKON" expression="0.72 * 100 % 3"/>
+            <output expression="SISABAGIDISKON" newline="True"/>
+            <output expression="&quot;Menyatukan semua informasi&quot;" newline="True"/>
+            <output expression="&quot;Anda membeli &quot; &amp; NAMABARANG &amp; &quot; dengan total sejumlah &quot; &amp; JUMLAHBARANG &amp; &quot; Anda mendapat total harga sebelum diskon sebesar Rp &quot; &amp; TOTALHARGASEBELUMDISKON &amp; &quot; Total diskon yang anda dapat adalah Rp &quot; &amp; TOTALDISKON &amp; &quot; Harga setelah diskon yang anda dapatkan adalah Rp &quot; &amp; HARGASETELAHDISKON &amp; &quot; Besar diskon yaitu &quot; &amp; DISKON &amp; &quot; dibagi 3 adalah &quot; &amp; SISABAGIDISKON" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
