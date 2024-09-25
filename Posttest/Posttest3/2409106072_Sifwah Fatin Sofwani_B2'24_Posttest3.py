@@ -1,4 +1,5 @@
 # Masukkan input tinggi badan dan berat badan dan konversikan
+
 print("Selamat datang di program menghitum BMI")
 tinggibadan = float(input("Masukkan tinggi badan anda \nContoh untuk 178 cm = 0.00178 \nMasukkan tinggi anda dalam km : "))
 beratbadan = float(input("Masukkan berat badan anda \nContoh 58 kg = 58000000 \nMasukkan berat badan anda dalam mg :"))
@@ -10,6 +11,7 @@ beratbadankg = beratbadan / 1000000
 
 print(f"Hasil konversi berat badan ke kg adalah {beratbadankg:.2f}")
 print(f"Hasil konversi tinggi badan ke m adalah {tinggibadanm:.2f}")
+
 # Menghitung BMI 
 
 bmi = beratbadankg / tinggibadanm ** 2
