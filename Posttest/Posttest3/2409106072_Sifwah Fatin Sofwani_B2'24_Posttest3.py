@@ -8,8 +8,8 @@ print(f"Berat badan yang anda masukkan : {beratbadan}")
 tinggibadanm = tinggibadan * 1000
 beratbadankg = beratbadan / 1000000
 
-print(f"Hasil konversi berat badan ke kg adalah {beratbadankg}")
-print(f"Hasil konversi tinggi badan ke m adalah {tinggibadanm}")
+print(f"Hasil konversi berat badan ke kg adalah {beratbadankg:.2f}")
+print(f"Hasil konversi tinggi badan ke m adalah {tinggibadanm:.2f}")
 # Menghitung BMI 
 
 bmi = beratbadankg / tinggibadanm ** 2
