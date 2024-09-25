@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="qee"/>
+        <attribute name="authors" value="Aspire 5"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-25 02:12:54 PM"/>
+        <attribute name="created" value="QXNwaXJlIDU7QVNQSVJFNTsyMDI0LTA5LTI0OzAxOjQyOjI4IFBNOzI0ODY="/>
+        <attribute name="edited" value="QXNwaXJlIDU7QVNQSVJFNTsyMDI0LTA5LTI0OzAyOjQxOjIyIFBNOzE7MjU4OA=="/>
+        <attribute name="edited" value="TVNJIFJ5emVuIDU7U0lGUzsyMDI0LTA5LTI1OzAyOjEyOjU0IFBNOzc7MjU5MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Selamat datang di kalkulator BMI&quot;" newline="True"/>
+            <declare name="tinggibadan, umur, tinggibadanm, beratbadankg, beratbadan, BMI" type="Real" array="False" size=""/>
+            <output expression="&quot;Masukkan tinggi badan dalam km: &quot;" newline="True"/>
+            <output expression="&quot;Contoh untuk tinggi 178 maka : 0.00178&quot;" newline="True"/>
+            <input variable="tinggibadan"/>
+            <output expression="&quot;Tinggi yang dimasukkan: &quot; &amp; tinggibadan" newline="True"/>
+            <assign variable="tinggibadanm" expression="tinggibadan * 1000"/>
+            <output expression="&quot;Tinggi badan setelah di konversikan : &quot; &amp; tinggibadanm" newline="True"/>
+            <output expression="&quot;Masukkan berat badan dalam bentuk mg: &quot;" newline="True"/>
+            <output expression="&quot;Contoh 20 kg = 20000000 mg&quot;" newline="True"/>
+            <input variable="beratbadan"/>
+            <output expression="&quot;Berat yang anda masukkan: &quot; &amp; beratbadan" newline="True"/>
+            <assign variable="beratbadankg" expression="beratbadan / 1000000"/>
+            <output expression="&quot;Maka berat setelah di konversikan : &quot; &amp; beratbadankg" newline="True"/>
+            <assign variable="BMI" expression="beratbadankg / (tinggibadanm^2)"/>
+            <output expression="&quot;BMI yang didapat adalah &quot; &amp; BMI" newline="True"/>
+            <if expression="BMI &lt; 18.5">
+                <then>
+                    <output expression="&quot;Karena BMI dibawah 18.5 maka berat badan anda kurang&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="BMI &lt; 24.9">
+                        <then>
+                            <output expression="&quot;Sesuai BMI anda maka berat badan anda adalah normal&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="BMI &lt; 29.9">
+                                <then>
+                                    <output expression="&quot;Sesuai BMI anda maka berat badan anda berlebih&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="BMI &gt; 30">
+                                        <then>
+                                            <output expression="&quot;Sesuai dengan BMI anda maka berat badan adalah obesitas&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Sesuai dengan BMI anda maka berat badan adalah obesitas&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
