@@ -1,0 +1,128 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "role": "admin",
+      "balance": null
+    },
+    {
+      "id": 2,
+      "username": "user",
+      "password": "user",
+      "role": "user",
+      "balance": 1000000
+    }
+  ],
+  "teaters": [
+    {
+      "id": 1,
+      "name": "Teater 1",
+      "film_id": 1,
+      "type": "reguler",
+      "capacity": 69,
+      "available": 69,
+      "price": 10000
+    },
+    {
+      "id": 2,
+      "name": "Teater 2",
+      "film_id": 2,
+      "type": "premiere",
+      "capacity": 70,
+      "available": 80,
+      "price": 40000
+    }
+  ],
+  "films": [
+    {
+      "id": 1,
+      "name": "Agak Laen",
+      "genre": [
+        "Horror",
+        "Comedy"
+      ],
+      "filmRating": "13+"
+    },
+    {
+      "id": 2,
+      "name": "Peaky blinders",
+      "genre": ["Thiller"],
+      "filmRating": "18+"
+    }
+  ],
+  "ticketTransactions": [
+    {
+      "id": 1,
+      "film_id": 1,
+      "teater_id": 1,
+      "user_id": 2,
+      "price": 10000,
+      "totalTicket": 1,
+      "totalPrice": 10000,
+      "purchaseTime": "2024-11-20 14:59:33"
+    }
+  ],
+  "fnb": [
+    {
+      "id": 1,
+      "name": "Hotdog",
+      "price": 25000,
+      "stock": 20
+    },
+    {
+      "id": 2,
+      "name": "Es Krim",
+      "price": 4000,
+      "stock": 14
+    }
+  ],
+  "fnbTransactions": [
+    {
+      "id": 1,
+      "user_id": 2,
+      "fnb_id": 2,
+      "quantity": 2,
+      "total": 8000,
+      "purchaseTime": "2024-11-20 15:13:33"
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "fnb_id": 2,
+      "quantity": 2,
+      "total": 8000,
+      "purchaseTime": "2024-11-20 20:40:32"
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "fnb_id": 2,
+      "quantity": 2,
+      "total": 8000,
+      "purchaseTime": "2024-11-20 20:40:54"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "comment": "This is a comment"
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "comment": "This is another comment"
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "comment": "filmnya asik bagerrr"
+    },
+    {
+      "user_id": 4,
+      "comment": "tes"
+    }
+  ]
+}
