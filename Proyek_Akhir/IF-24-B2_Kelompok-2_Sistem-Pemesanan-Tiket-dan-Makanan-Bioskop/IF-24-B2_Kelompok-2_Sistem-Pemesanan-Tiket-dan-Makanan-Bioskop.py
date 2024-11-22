@@ -481,8 +481,9 @@ def menuhistorymakanan():
 
     if transaksi_ditemukan == 0:
         print(Fore.LIGHTYELLOW_EX + Style.BRIGHT +"Tidak ada riwayat pembelian FnB untuk pengguna ini.\n")
-        input(Fore.LIGHTBLUE_EX + Style.BRIGHT +">> Klik enter untuk kembali ke halaman utama\n")
-        cls()
+
+    input(Fore.LIGHTBLUE_EX + Style.BRIGHT +">> Klik enter untuk kembali ke halaman utama\n")
+    cls()
 
 # fungsi menu riwayat tiket
 def menuhistorytiket():
@@ -524,8 +525,9 @@ def menuhistorytiket():
 
     if tiket_ditemukan == 0:
         print(Fore.LIGHTYELLOW_EX + Style.BRIGHT +"Tidak ada riwayat pembelian\n")
-        input(Fore.LIGHTBLUE_EX + Style.BRIGHT +">> Klik enter untuk kembali ke halaman utama\n")
-        cls()
+
+    input(Fore.LIGHTBLUE_EX + Style.BRIGHT +">> Klik enter untuk kembali ke halaman utama\n")
+    cls()
 
 # fungsi menu komentar
 def menukomentar(username):
