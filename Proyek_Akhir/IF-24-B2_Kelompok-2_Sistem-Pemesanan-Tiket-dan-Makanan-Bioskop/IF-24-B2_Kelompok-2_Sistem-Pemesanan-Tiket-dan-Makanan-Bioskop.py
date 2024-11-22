@@ -1952,9 +1952,9 @@ while True:
             case "3":
                 menutopup()
             case "4":
-                for database in database['users']:
-                    if username == database['username']:
-                        print(Fore.LIGHTGREEN_EX + f"Saldo Anda adalah Rp.{database['balance']}\n")
+                for data in database['users']:
+                    if username == data['username']:
+                        print(Fore.LIGHTGREEN_EX + f"Saldo Anda adalah Rp.{data['balance']}\n")
                 input(Fore.LIGHTBLUE_EX + ">> Klik enter untuk kembali ke halaman utama\n")
                 cls()
             case "5":
