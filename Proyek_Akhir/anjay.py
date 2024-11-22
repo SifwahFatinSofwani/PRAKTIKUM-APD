@@ -1,1 +1,0 @@
-pa tamat pls
